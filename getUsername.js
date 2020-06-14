@@ -3,10 +3,13 @@ const input = document.querySelector(".inputName"),
   username = document.querySelector(".username");
 
 function showUsername(name) {
+  form.classList.remove("showing");
+  username.classList.add("showing");
   username.innerText = `Hello! ${name}`;
 }
 
 function AskUsername() {
+  form.classList.add("showing");
   form.addEventListener("submit", getUsername);
 }
 
