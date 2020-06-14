@@ -1,3 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+body,
+html {
+  color: #ffffff;
+  text-align: center;
+  margin-top: 80px;
+  font-family: "Poppins", sans-serif;
+}
+ul {
+  list-style: none;
+}
+.todoList {
+  font-size: 20px;
+  font-weight: bold;
+}
+.date {
+  font-size: 25px;
+  font-weight: bold;
+}
+.board {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  left: 470px;
+  top: 90px;
+  background-color: #1abc9c;
+  opacity: 0.3;
+  z-index: -1;
+}
+.delBtn {
+  border: 0;
+  outline: 0;
+  background-color: transparent;
+}
+
+input {
+  border-left-width: 0;
+  border-right-width: 0;
+  border-top-width: 0;
+  border-bottom-width: 1;
+  background: transparent;
+  border-color: #ffffff;
+  color: #ffffff;
+  font-size: 20px;
+}
+input:focus {
+  outline: none;
+}
+.clock {
+  font-size: 70px;
+}
 .form,
 .username {
   display: none;
@@ -20,6 +72,6 @@
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: -1;
+  z-index: -100;
   animation: fadeIn 0.5s linear;
 }

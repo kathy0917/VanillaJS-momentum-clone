@@ -25,6 +25,9 @@ function showToDo(text) {
   const li = document.createElement("li");
   const delBtn = document.createElement("button");
   const span = document.createElement("span");
+  span.classList.add("todoList");
+  delBtn.classList.add("delBtn");
+  li.classList.add("li");
   const newId = toDoArr.length + 1;
   delBtn.innerText = "❌";
   delBtn.addEventListener("click", deleteToDo);
@@ -32,7 +35,6 @@ function showToDo(text) {
   li.appendChild(delBtn);
   li.appendChild(span);
   li.id = newId;
-  console.log(li);
   ul.appendChild(li);
   const toDoObj = {
     text: text,
